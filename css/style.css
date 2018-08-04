@@ -1,0 +1,186 @@
+html, body
+{
+    height  : 100%;     /* make sure it is at least as tall as the viewport */
+}
+
+/**
+ * Sets the background of the page to dark gray (#363636)
+ * Also sets font properties
+ */
+body 
+{
+    margin: 0;
+	background-color	 : #363636;
+    font-size		     : 87.5%;	/* Base font size is 14px	#CF5C3F*/
+	font-family		     : Arial, 'Lucida Sans Unicode';
+	line-height		     : 1.5;
+	text-align		     : left;
+}
+
+/**
+ * All main content is 70% the width of the body and will always stretch to the bottom of the page
+ */
+#mainContent 
+{
+    background-color    : #FFFFFF;
+    width               : 60%;
+    min-height          : 100%;
+    overflow            : auto;
+    margin              : auto;
+    padding             : 20px 50px 20px 50px;
+}
+
+/**
+ * Makes sure the div stretches to fit the content.
+ */
+#title 
+{
+    display         : block;
+    overflow        : auto;
+    border-bottom   : medium solid #363636;
+    margin-bottom   : 2%;
+}
+
+/**
+ * Makes sure the main heading right aligned and changes its size/colour etc.
+ */
+h1 
+{
+    float       : left;
+    width       : 60%;
+    text-align  : left;
+    font-weight : bold;
+    font-size   : 30px;
+    color       : #004F6B;
+    margin-top  : 0;
+}
+
+h4
+{
+    margin-bottom  : 0.5%;
+}
+
+#body
+{
+    overflow: hidden;
+}
+
+#chart, .select
+{
+    float: right;
+    width: 57%;
+}
+
+#canvasWrapper
+{
+    position: relative;
+    width: 450px;
+    height: 850px;
+    float: left;
+}
+
+#canvasWrapper canvas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nv-axislabel
+{
+    font: bold 15px sans-serif !important;
+}
+
+select:required:invalid {
+    color: #999;
+}
+option[value=””][disabled] {
+    display: none;
+}
+option {
+    color: #000;
+}
+
+
+#chart{
+    margin-bottom: 2%;
+}
+.select{
+    margin-bottom: 1.5%;
+    border-bottom: thin solid #363636;
+    padding-bottom: 5px; 
+}
+
+.select select
+{
+    float: left;
+    display: inline; 
+    padding: 12px 0px 12px 11px !important;
+    margin-right: 0.5%;
+    /*max-width: 100%;*/
+    height: auto !important; 
+    border: 1px solid #e3e3e3; 
+    border-radius: 3px; 
+    background: url("../img/arrow_down_icon_64_resized.png") right center no-repeat;
+    background-color: #fff; 
+    color: #444444; 
+    font-size: 12px; 
+    line-height: 16px !important; 
+    appearance: none; 
+    /* this is must */ -webkit-appearance: none; 
+    -moz-appearance: none;
+} 
+
+/* body select.select_box option */ 
+.select select option 
+{ 
+    padding: 0 4px; 
+} 
+/* for IE and Edge */ 
+select::-ms-expand 
+{ 
+    display: none; 
+} 
+select:disabled::-ms-expand 
+{ 
+    background: #f60; 
+}
+
+
+.year
+{
+    width: 15.5%;
+}
+.tournament
+{
+    width: 22%;
+}
+.type
+{
+    width: 15.5%;
+}
+.round
+{
+    width: 16.5%;
+}
+.match
+{
+    width: 23.5%;
+}
+
+
+.add_remove
+{
+    float: right;
+    display: inline;
+    width: 3.5%;
+}
+
+.add, .remove
+{
+    display: block;
+    width: 100%;
+    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+}

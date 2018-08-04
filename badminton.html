@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8>
+		<title>
+			Badminton
+		</title>
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link href="vendor/nvd3/nv.d3.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="vendor/d3js/d3.v3.min.js"></script>
+        <script type="text/javascript" src="vendor/nvd3/nv.d3.js"></script>
+	</head>
+
+	<body onload="createGraph()">
+        <!-- Container for all main content on the page -->
+		<div id="mainContent">
+            <!-- Holds the title of the page -->
+            <div id="title">
+                <!-- Title -->
+                <h1>Badminton Game Analyser</h1>
+            </div>
+            
+            <div id="body">
+                <div id="canvasWrapper">
+                    <canvas id="canvas" width="436" height="838"></canvas>
+                </div>
+                <div id="graph">
+                    <div id="chart" style="height:500px">
+                        <svg></svg>
+                    </div>
+                    <div class="select">
+                        <select class="year">
+                            <option value="" hidden>Year...</option>
+                            <!-- normal options -->
+                            <option value="1">2018</option>
+                            <option value="2">2017</option>
+                            <option value="3">2016</option>
+                            <option value="4">2015</option>
+                            <option value="5">2014</option>
+                        </select>
+                        <select class="tournament">
+                            <option value="" hidden>Tournament...</option>
+                            <option value="1">All England Open</option>
+                            <option value="2">Japan Open</option>
+                            <option value="3">Denmark Open</option>
+                        </select>
+                        <select class="type">
+                            <option value="" hidden>Type...</option>
+                            <option value="1">MS</option>
+                            <option value="2">WS</option>
+                            <option value="3">MD</option>
+                            <option value="4">WD</option>
+                            <option value="5">XD</option>
+                        </select>
+                        <select class="round">
+                            <option value="" hidden>Round...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">Q</option>
+                            <option value="4">S</option>
+                            <option value="5">F</option>
+                        </select>
+                        <select class="match" onchange="selectMatch()">
+                            <option value="" hidden>Match...</option>
+                            <option value="1">Korea - Denmark</option>
+                            <option value="2">China - Japan</option>
+                            <option value="3">England - Russia</option>
+                        </select>
+                        
+                        <div class="add_remove">
+                            <button class="remove" onclick="remove(this)">-</button>
+                            <button class="add" onclick="add()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
