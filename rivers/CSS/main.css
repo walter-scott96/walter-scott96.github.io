@@ -1,0 +1,189 @@
+/*532 project*/
+/*sets font family*/
+body {
+	font-family: sans-serif;
+	min-width: 800px;
+}
+/*main header format*/
+h1 {
+	padding: 10px;
+	border-bottom: 1px solid black;
+	background-image: linear-gradient(to right, white 30%,silver 80%, blue);	
+}
+/*footer format*/
+footer {
+	font-style: italic;
+	float: right;
+}
+section {
+	width:auto;
+}
+/*map size*/
+#map {
+	height: 700px;
+	width: auto;
+}
+
+/*nav bar*/
+#nav {
+	width: 180px;
+	background-color:  #f7f3d1;
+	margin: 10px;
+	opacity: 0.8; 
+}
+#nav:hover {
+	opacity: 1;
+}
+#nav>span {
+	font-size: 16px;
+	font-weight: bold;
+}
+#nav>div {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#layerBtn {
+	width: 110px;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px;
+	opacity: 0.8; 
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+#layerBtn:hover {
+	opacity: 1;
+	background-color: lightgreen;
+}
+.layerBtnHidden {
+	background-color:  gray;
+}
+.layerBtnShown {
+	background-color:  green;
+}
+.hideLayers {
+	display:none;
+}
+.selectedLayer {
+	background-color: gold;
+	display: block;
+}
+.layer:hover {
+	background-color: lightblue;
+}
+.layer:active {
+	background-color: lightgreen;
+	color: white;
+}
+.arrowUp, .arrowDown{
+	float: right;
+	width: 0; 
+	height: 0;
+}  
+.arrowDown { 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid green;
+}
+.arrowUp {
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid red;
+}
+.arrowDown:hover {
+	border-top: 15px solid orange;
+}
+.arrowUp:hover {
+	border-bottom: 15px solid orange;
+}
+
+/*slider CSS*/
+#sliderContainer {
+	width: 100%;
+	margin: 25px;
+}
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 100%; 
+    height: 25px; 
+    background-color: white; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+} 
+#sliderValue {
+	position: absolute;
+	left: 0%;
+	bottom: 30px;
+	background-color:hsl(39, 90%, 80%);
+	border-radius: 3px;
+	padding: 5px;
+	width: 50px;
+}
+
+/* Style for the legend */
+#legend {
+    background: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 10px 75px 10px;
+    font-size: 12px;
+	opacity: 0.8;
+}
+
+#infographic {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 75px;
+	width: 480px; height: 270px;
+	background-color: white;
+	opacity: 0.7;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.color {
+    border: 1px solid;
+    height: 12px;
+    width: 12px;
+    margin-right: 3px;
+    float: left;
+}
+
+.red {
+    background: rgb(255, 102, 102);
+}
+.yellow {
+    background: rgb(255, 255, 153);
+}
+.green {
+    background: rgb(153, 255, 153);
+}
+.blue {
+    background: rgb(153, 153, 255);
+}
