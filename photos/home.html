@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=UTF-8>
+		<title>
+			Photo Navigation
+		</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+		<link href="./css/navbar.css" rel="stylesheet" type="text/css">
+        <link href="./css/preview.css" rel="stylesheet" type="text/css">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+	</head>
+
+	<body onload="setupHome(8, true, false)">      
+        <div id='navmenu'>
+            <ul>
+                <li class='navhome'><a href='./index.html'><span>Photo Navigation</span></a></li>
+                <li class='navitem'><a href='./browse/albums.html'><span>Albums</span></a></li>
+                <li class='navitem'><a href='./browse/colours.html'><span>Colours</span></a></li>
+                <li class='navitem'><a href='./browse/keywords.html'><span>Keywords</span></a></li>
+            </ul>
+        </div>
+        
+        <div id="mainContent">
+            <div id="container">
+                <div id="help" class="row halign">
+                    <h2>Filter </h2>
+                    <label class="white">
+                        <input type="radio" name="filter" checked>
+                        <span>Newest</span>
+                    </label>
+                    <label class="white">
+                        <input type="radio" name="filter">
+                        <span>Oldest</span>
+                    </label>
+                    <label class="white long">
+                        <input type="radio" name="filter">
+                        <span>Sort by Popularity</span>
+                    </label>
+                </div>
+                <div id="images">
+
+                </div>
+                <div id="pagination-container">
+                    <div id="pagination">
+                        <a onclick="left()" href="#">&laquo;</a>
+                        <a onclick="active(event)" class="active" href="#">1</a>
+                        <a onclick="active(event)" href="#">2</a>
+                        <a onclick="active(event)" href="#">3</a>
+                        <a onclick="active(event)" href="#">4</a>
+                        <a onclick="active(event)" href="#">5</a>
+                        <a onclick="active(event)" href="#">6</a>
+                        <a onclick="right()" href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

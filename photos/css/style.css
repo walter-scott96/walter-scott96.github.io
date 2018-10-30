@@ -1,0 +1,175 @@
+body 
+{
+    margin: 0;
+    padding:0;
+    font-size		     : 100%;	/* Base font size is 14px	#CF5C3F*/
+	font-family		     : Arial, 'Lucida Sans Unicode';
+	line-height		     : 1.5;
+	text-align		     : left;
+    overflow: hidden;
+}
+
+html, body
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+#mainContent
+{
+    flex-grow: 1;
+    margin-top: 57px;
+
+}
+
+#container
+{
+    width: 55%;
+    min-height: 100%;
+    overflow: auto;
+    margin: auto;
+}
+
+#help {
+    width: 100%;
+    overflow: auto;
+    margin-top: 25px;
+}
+
+#help h2 {
+    display: inline;
+    float: left;
+    margin-right: 50px;
+    line-height: 1.0;
+}
+
+#help .white {
+    background-color:#FFFFFF;
+    color:#000;
+    float:left;
+    width:100px;
+	margin:10px 10px;
+    background-color:#FFF;
+    border-radius:25px;
+    border: none;
+    overflow:auto;
+}
+
+#help .long {
+    width:170px;
+}
+
+#help label span {
+    text-align:center;
+    font-size: 16px;
+    padding:7px 0px;
+    display:block;
+}
+
+#help label input {
+    position:absolute;
+    top:-20px;
+}
+
+#help input:checked + span {
+    background-color:#CCCCCC;
+}
+
+
+#images {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: space-between;
+}
+
+.img-box {
+    width: 85%;
+    height: 150px;
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+#pagination-container {
+    margin-top: 40px;
+    overflow: auto;
+}
+
+#pagination {
+    width: 328px;
+    margin: 0 auto;
+}
+
+#pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+#pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+#help h1 {
+    display: inline;
+    float: right;
+    margin-right: 0;
+    line-height: 1.0;
+}
+
+
+#img {
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.display {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 350px;
+    object-fit: cover;
+    justify-content: center;
+    
+    text-decoration: none;
+}
+
+#left {
+    float: left;
+    margin-left: 10%;
+    font-size: 32px;
+    line-height: 0.6;
+}
+
+#right {
+    float: right;
+    margin-right: 10%;
+    font-size: 24px;
+    line-height: 0.8;
+    text-align: right;
+}
+
+#right a {
+    margin-left: 15px;
+}
