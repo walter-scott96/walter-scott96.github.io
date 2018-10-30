@@ -9,9 +9,9 @@ function setupHome(c, p, a)
         if(p == true && a == false){
             img.style.backgroundImage = 'url("./img/'+f+'.jpg")'; 
         } else if(p == false && a == true) {
-            img.style.backgroundImage = 'url("../img/'+f+'a.png")';
+            img.style.backgroundImage = 'url("../img/'+f+'a.PNG")';
         } else if(p == true && a == true) {
-            img.style.backgroundImage = 'url("./img/'+f+'a.png")';
+            img.style.backgroundImage = 'url("./img/'+f+'a.PNG")';
         } else {
             img.style.backgroundImage = 'url("../img/'+f+'.jpg")';
         }
@@ -67,9 +67,9 @@ function setupImg(c, p, a)
         if(p == true && a == false){
             img.style.backgroundImage = 'url("./img/'+f+'.jpg")'; 
         } else if(p == false && a == true) {
-            img.style.backgroundImage = 'url("../img/'+f+'a.png")';
+            img.style.backgroundImage = 'url("../img/'+f+'a.PNG")';
         } else if(p == true && a == true) {
-            img.style.backgroundImage = 'url("./img/'+f+'a.png")';
+            img.style.backgroundImage = 'url("./img/'+f+'a.PNG")';
         } else {
             img.style.backgroundImage = 'url("../img/'+f+'.jpg")';
         }
