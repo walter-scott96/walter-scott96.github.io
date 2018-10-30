@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/mrgrain/colpick",
   "dependencies": {
-    "jquery": ">=1.7.0 || ^2.1.4"
+    "jquery": ">=3.0.0 || ^3.0.0"
   }
 }
